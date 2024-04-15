@@ -1,5 +1,5 @@
 import os
-from ticTacToe.game_play import *
+from game_play import *
 import time
 
 

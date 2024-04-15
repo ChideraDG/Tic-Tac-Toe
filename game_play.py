@@ -1,5 +1,5 @@
 import os
-from ticTacToe.gamers import *
+from gamers import *
 import time
 
 
@@ -24,7 +24,7 @@ def play():
 
     while i <= Game.game_value:
         Game.game_set = i  # helps the class know which game set is currently being played
-        Game.game_selection()  # users shape selection panel
+        Game.game_selection()  # users shape selection
         while not Game.checking() and game_input < 9:
             # When there is no winner yet
             for key, val in Gamers.shapes.items():
@@ -69,7 +69,6 @@ def play():
                 # Reset the numbers in the tic-tac-toe box
                 Game.position[f'pos{number}'] = number
             game_input = 0  # reset the game inputs to zero
-
 
 
 class Game(Gamers):

@@ -12,10 +12,10 @@ class Gamers:
         """Checks for the winner after each set and after total set"""
         if cls.shapes['Player 1'] == cls.__winning_shape:
             print(f'Player 1 is the winner of Set {cls.game_set}\n')
-            cls.scores['Player 1'] += 1
+            cls.__scores['Player 1'] += 1
         elif cls.shapes['Player 2'] == cls.__winning_shape:
             print(f'Player 2 is the winner of Set {cls.game_set}\n')
-            cls.scores['Player 2'] += 1
+            cls.__scores['Player 2'] += 1
 
         if cls.__scores['Player 1'] + cls.__scores['Player 2'] == cls.game_value:
             if cls.__scores['Player 1'] > cls.__scores['Player 2']:
